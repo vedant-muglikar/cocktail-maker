@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  width: 20rem;
+  height: 20rem;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  color: white;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  background: #282c35;
+  min-height: 95vh;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+button {
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  background: white;
+  cursor: pointer;
+}
+
+footer {
+  min-height: 5vh;
+  background: #282c35;
+  position: fixed;
+  width: 100%;
+  color: white;
+}

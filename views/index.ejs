@@ -1,0 +1,22 @@
+<%- include("partials/header.ejs") %>
+<section class="main">
+  <div class="drink-img">
+    <img src="<%= JSON.parse(drink).strDrinkThumb %>" alt="" />
+  </div>
+  <div class="drink-recp">
+    <ul>
+      <% for (let i = 1; i < 16; i++) {%> <%if
+      (JSON.parse(drink)[`strMeasure${i}`] != null) {%>
+      <li>
+        <%=JSON.parse(drink)[`strMeasure${i}`]%>
+        <%=JSON.parse(drink)[`strIngredient${i}`]%>
+      </li>
+      <%}%> <%} %>
+    </ul>
+  </div>
+  <form action="/">
+    <button>One More</button>
+  </form>
+</section>
+
+<%- include("partials/footer.ejs") %>
